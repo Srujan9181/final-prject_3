@@ -1,0 +1,60 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.table{
+    
+    display: flex;
+    height: 90vh;
+    gap: 5%;
+    overflow-y: scroll;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 65vw;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    
+    
+}
+.search{
+
+}
+
+
+.tableCard{
+    
+    padding:15px;
+    width: 65px;
+    height: 65px;
+    background-color: rgb(240, 245, 243);
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+ 
+}
+
+.deleteicon{
+    background-color: rgb(240, 245, 243);
+    position: relative;
+    text-align: right;
+    left: 60%;
+    top: -10%;
+    
+}
+.seats{
+    position: relative;
+    left: 45%;
+    bottom: 10%;
+    font-size: small;
+}
+.addtablecard{
+    font-size: small;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    background-color: #f0f5f3;
+}

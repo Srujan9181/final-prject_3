@@ -1,0 +1,16 @@
+.icons{
+    display: flex;
+    flex-direction: column;
+   
+    height: 89vh;
+    width: 30%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    border-radius: 100px;
+    background-color: white;
+    margin-left: 8%;
+    padding-top:10px;
+}
+
+
