@@ -1,0 +1,68 @@
+[
+  {
+    "food_name": "Spicy Fries",
+    "duration": "2 min",
+    "food_type": "french fries",
+    "price": 6
+  },
+  {
+    "food_name": "Waffle Fries",
+    "duration": "9 min",
+    "food_type": "french fries",
+    "price": 6
+  },
+  {
+    "food_name": "Curly Fries",
+    "duration": "6 min",
+    "food_type": "french fries",
+    "price": 3
+  },
+  {
+    "food_name": "Cheese Burger",
+    "duration": "3 min",
+    "food_type": "burger",
+    "price": 11
+  },
+  {
+    "food_name": "Saut\u00e9ed Spinach",
+    "duration": "4 min",
+    "food_type": "veggies",
+    "price": 9
+  },
+  {
+    "food_name": "Bacon Burger",
+    "duration": "19 min",
+    "food_type": "burger",
+    "price": 5
+  },
+  {
+    "food_name": "Grilled Veggies",
+    "duration": "12 min",
+    "food_type": "veggies",
+    "price": 8
+  },
+  {
+    "food_name": "Saut\u00e9ed Spinach",
+    "duration": "7 min",
+    "food_type": "veggies",
+    "price": 7
+  },
+  {
+    "food_name": "Pepperoni Pizza",
+    "duration": "9 min",
+    "food_type": "pizzas",
+    "price": 8
+  },
+  {
+    "food_name": "BBQ Chicken Pizza",
+    "duration": "16 min",
+    "food_type": "pizzas",
+    "price": 8
+  },
+  {
+    "food_name": "Double Patty",
+    "duration": "9 min",
+    "food_type": "burger",
+    "price": 12
+  }
+]
