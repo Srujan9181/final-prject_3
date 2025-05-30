@@ -1,68 +1,92 @@
 [
   {
     "food_name": "Spicy Fries",
-    "duration": "2 min",
+    "duration": "2",
     "food_type": "french fries",
-    "price": 6
+    "price": 6,
+    "quantity": 0,
+    "overaltime": 0,
+    "overalprice": 0
   },
   {
     "food_name": "Waffle Fries",
-    "duration": "9 min",
+    "duration": "9",
     "food_type": "french fries",
-    "price": 6
+    "price": 6,
+    "quantity": 0,
+    "overaltime": 0,
+    "overalprice": 0
   },
   {
     "food_name": "Curly Fries",
-    "duration": "6 min",
+    "duration": "6",
     "food_type": "french fries",
-    "price": 3
+    "price": 3,
+    "quantity": 0,
+    "overaltime": 0,
+    "overalprice": 0
   },
   {
     "food_name": "Cheese Burger",
-    "duration": "3 min",
+    "duration": "3",
     "food_type": "burger",
-    "price": 11
-  },
-  {
-    "food_name": "Saut\u00e9ed Spinach",
-    "duration": "4 min",
-    "food_type": "veggies",
-    "price": 9
+    "price": 11,
+    "quantity": 0,
+    "overaltime": 0,
+    "overalprice": 0
   },
   {
     "food_name": "Bacon Burger",
-    "duration": "19 min",
+    "duration": "19",
     "food_type": "burger",
-    "price": 5
+    "price": 5,
+    "quantity": 0,
+    "overaltime": 0,
+    "overalprice": 0
   },
   {
     "food_name": "Grilled Veggies",
-    "duration": "12 min",
+    "duration": "12",
     "food_type": "veggies",
-    "price": 8
+    "price": 8,
+    "quantity": 0,
+    "overaltime": 0,
+    "overalprice": 0
   },
   {
-    "food_name": "Saut\u00e9ed Spinach",
-    "duration": "7 min",
+    "food_name": "Sautéed Spinach",
+    "duration": "7",
     "food_type": "veggies",
-    "price": 7
+    "price": 7,
+    "quantity": 0,
+    "overaltime": 0,
+    "overalprice": 0
   },
   {
     "food_name": "Pepperoni Pizza",
-    "duration": "9 min",
+    "duration": "9",
     "food_type": "pizzas",
-    "price": 8
+    "price": 8,
+    "quantity": 0,
+    "overaltime": 0,
+    "overalprice": 0
   },
   {
     "food_name": "BBQ Chicken Pizza",
-    "duration": "16 min",
+    "duration": "16",
     "food_type": "pizzas",
-    "price": 8
+    "price": 8,
+    "quantity": 0,
+    "overaltime": 0,
+    "overalprice": 0
   },
   {
     "food_name": "Double Patty",
-    "duration": "9 min",
+    "duration": "9",
     "food_type": "burger",
-    "price": 12
+    "price": 12,
+    "quantity": 0,
+    "overaltime": 0,
+    "overalprice": 0
   }
 ]

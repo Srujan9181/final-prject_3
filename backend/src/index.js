@@ -3,6 +3,7 @@ import Database from './libs/db.js'
 import dotenv from 'dotenv';
 import cors from 'cors'
 import adminRoute from './routes/admin.route.js';
+import userRouter from './routes/user.route.js';
 const server=express()
 dotenv.config()
 const PORT=process.env.PORT
@@ -13,6 +14,7 @@ Database()
 
 
 server.use('/admin',adminRoute)
+server.use('/user',userRouter)
 
 
 server.listen(PORT,function(){

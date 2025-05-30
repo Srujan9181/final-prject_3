@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import menu from '../jsondata/menu.json'
+import axios from 'axios'
 import styles from '../styles/menu.module.css'
 import { FaPlus,FaRupeeSign } from "react-icons/fa";
 import { LiaHamburgerSolid } from "react-icons/lia";
@@ -8,21 +8,33 @@ import { RiDrinks2Line } from "react-icons/ri";
 import { GiFrenchFries } from "react-icons/gi";
 import { GiFruitBowl } from "react-icons/gi";
 import { useNavigate } from 'react-router';
-
-
-
-
-
+import Cards from '../components/cards';
 function Menu() {
+  const[menu,setMenu]=useState([])
+  async function getmenu(){
+    let item=await axios.get('http://localhost:5555/user')
+    setMenu(item.data)      
+  }
     let navigate=useNavigate()
+    useEffect(function(){
+      getmenu()
+    },[])
   
-  const [ordeitems,Setorderitem]=useState(parseInt(localStorage.getItem('orderitems')) || 0)
-  const[items,Setitems]=useState(JSON.parse((localStorage.getItem("items"))) || [])
+
+  const [orderitems,Setorderitem]=useState(parseInt(localStorage.getItem('orderitems')) || 0)
+  // const[items,Setitems]=useState(JSON.parse((localStorage.getItem("items"))) || {})
   
-  localStorage.setItem("orderitems",ordeitems)
-  localStorage.setItem("items",JSON.stringify(items))
-  console.log("items",items)
   
+  localStorage.setItem("orderitems",orderitems)
+  // localStorage.setItem("items",JSON.stringify(items))
+  //console.log("items",items)
+
+  // const uniqueData = Array.from(
+  // new Map(items.map(item => [JSON.stringify(item), item])).values());
+  // localStorage.setItem("uniqueData",JSON.stringify(uniqueData))
+  // // console.log("uniqueData",uniqueData)
+  
+
   
   const [wish,Setwish]=useState("Good Night")
           const getGreeting= function () {
@@ -59,27 +71,15 @@ function Menu() {
       <div className={styles.menu}>
         
       {menu.map( function(item,index){
-          return <div key={index} className={styles.items}>
-                <img className={styles.image} src="https://media.istockphoto.com/id/1442417585/photo/person-getting-a-piece-of-cheesy-pepperoni-pizza.jpg?s=612x612&w=0&k=20&c=k60TjxKIOIxJpd4F4yLMVjsniB4W1BpEV4Mi_nb4uJU=" alt="" />
-                <div className={styles.itemdesc}>
-                      <div>
-                        <p>{item.food_name}</p>
-                        <p style={{fontSize:"large"}}><FaRupeeSign />{item.price}</p>
-                      </div>
-                      <FaPlus style={{position:"relative", top:"45%"}} onClick={()=>{Setorderitem(ordeitems+1);
-                        Setitems([...items,item])
-                         } }/>
-                        
-                </div>
-                
-                </div>
+          return  <Cards key={index} item={item} orderitems={orderitems} Setorderitem={Setorderitem}/> 
+                  
       }
 
       )}
       </div>
       
-        {ordeitems!=0 && <div className={styles.numberoforders}> 
-          {ordeitems + (ordeitems>1?' items added':'item added')}
+        {orderitems!=0 && <div className={styles.numberoforders}> 
+          {orderitems + (orderitems>1?' items added':'item added')}
           <button onClick={()=>navigate('cart')}>Next</button>
           </div>}
       
