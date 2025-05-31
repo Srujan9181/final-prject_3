@@ -20,12 +20,12 @@ function Menu() {
       getmenu()
     },[])
   
-
+  const [idqunat,setIdqunat]=useState(JSON.parse(localStorage.getItem('idquant'))||[])
   const [orderitems,Setorderitem]=useState(parseInt(localStorage.getItem('orderitems')) || 0)
   // const[items,Setitems]=useState(JSON.parse((localStorage.getItem("items"))) || {})
   
   
-  localStorage.setItem("orderitems",orderitems)
+  
   // localStorage.setItem("items",JSON.stringify(items))
   //console.log("items",items)
 
@@ -71,7 +71,7 @@ function Menu() {
       <div className={styles.menu}>
         
       {menu.map( function(item,index){
-          return  <Cards key={index} item={item} orderitems={orderitems} Setorderitem={Setorderitem}/> 
+          return  <Cards key={index} item={item} orderitems={orderitems} Setorderitem={Setorderitem} idqunat={idqunat} setIdqunat={setIdqunat}/> 
                   
       }
 
