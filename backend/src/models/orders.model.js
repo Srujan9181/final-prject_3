@@ -1,5 +1,6 @@
 import mongoose, { mongo } from "mongoose";
 import table from './table.model.js'
+import chief from './chief.model.js'
 let orders=new mongoose.Schema({
     items:{
         type:Array
@@ -21,7 +22,7 @@ let orders=new mongoose.Schema({
         ref:table
     },
     chief:{
-        ref:table
+        ref:chief
     }
 })
 

@@ -12,10 +12,10 @@ function Navbar({state,Setstate}) {
    
   return (
     <div className={styles.icons}>
-        <BsGrid1X2Fill  onClick={()=>Setstate('')}/>
-        <RiSofaFill onClick={()=>Setstate('table')}/>
-        <FaBook onClick={()=>Setstate('menu')}/>
-        <IoMdStats onClick={()=>Setstate('orders')}/>  
+        <BsGrid1X2Fill  onClick={()=>{Setstate(''); localStorage.setItem('state','')}}/>
+        <RiSofaFill onClick={()=>{Setstate('table'); localStorage.setItem('state','table');}} />
+        <FaBook onClick={()=>{window.open('http://localhost:5173','_self')}}/>
+        <IoMdStats onClick={()=>{Setstate('orders');localStorage.setItem('state','orders')}}/>  
     </div>
   )
 }

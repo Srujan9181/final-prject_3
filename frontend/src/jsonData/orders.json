@@ -1,0 +1,177 @@
+[
+  {
+    "items": [
+      { "name": "Veg Burger", "quantity": 1, "price": 5.0 },
+      { "name": "French Fries", "quantity": 1, "price": 2.5 }
+    ],
+    "ordered_by": 201,
+    "duration": 15,
+    "order_type": "takeaway",
+    "order_status": "not served",
+    "table_number": "6659ec8f9f1f6f001a4ef0c1",
+    "chief": "6659ecab9f1f6f001a4ef0c7",
+    "process": "Orderdone",
+    "pickedup": false
+  },
+  {
+    "items": [
+      { "name": "Chicken Wings", "quantity": 6, "price": 7.99 }
+    ],
+    "ordered_by": 202,
+    "duration": 25,
+    "order_type": "dine-in",
+    "order_status": "served",
+    "table_number": "6659ec8f9f1f6f001a4ef0c2",
+    "chief": "6659ecab9f1f6f001a4ef0c8",
+    "process": "Processing",
+    "pickedup": false
+  },
+  {
+    "items": [
+      { "name": "Pasta Alfredo", "quantity": 1, "price": 9.5 }
+    ],
+    "ordered_by": 203,
+    "duration": 20,
+    "order_type": "dine-in",
+    "order_status": "not served",
+    "table_number": "6659ec8f9f1f6f001a4ef0c3",
+    "chief": "6659ecab9f1f6f001a4ef0c9",
+    "process": "Processing",
+    "pickedup": false
+  },
+  {
+    "items": [
+      { "name": "Caesar Salad", "quantity": 2, "price": 6.75 }
+    ],
+    "ordered_by": 204,
+    "duration": 10,
+    "order_type": "takeaway",
+    "order_status": "served",
+    "table_number": "6659ec8f9f1f6f001a4ef0c4",
+    "chief": "6659ecab9f1f6f001a4ef0ca",
+    "process": "Processing",
+    "pickedup": false
+  },
+  {
+    "items": [
+      { "name": "Grilled Sandwich", "quantity": 1, "price": 4.99 },
+      { "name": "Orange Juice", "quantity": 1, "price": 2.0 }
+    ],
+    "ordered_by": 205,
+    "duration": 18,
+    "order_type": "dine-in",
+    "order_status": "not served",
+    "table_number": "6659ec8f9f1f6f001a4ef0c5",
+    "chief": "6659ecab9f1f6f001a4ef0cb",
+    "process": "Processing",
+    "pickedup": false
+  },
+  {
+    "items": [
+      { "name": "Paneer Tikka", "quantity": 1, "price": 10.0 }
+    ],
+    "ordered_by": 206,
+    "duration": 30,
+    "order_type": "takeaway",
+    "order_status": "not served",
+    "table_number": "6659ec8f9f1f6f001a4ef0c6",
+    "chief": "6659ecab9f1f6f001a4ef0cc",
+    "process": "Processing",
+    "pickedup": false
+  },
+  {
+    "items": [
+      { "name": "Butter Chicken", "quantity": 1, "price": 12.5 },
+      { "name": "Naan", "quantity": 2, "price": 1.5 }
+    ],
+    "ordered_by": 207,
+    "duration": 35,
+    "order_type": "dine-in",
+    "order_status": "served",
+    "table_number": "6659ec8f9f1f6f001a4ef0c7",
+    "chief": "6659ecab9f1f6f001a4ef0cd",
+    "process": "Processing",
+    "pickedup": false
+  },
+  {
+    "items": [
+      { "name": "Tandoori Roti", "quantity": 3, "price": 1.2 },
+      { "name": "Dal Makhani", "quantity": 1, "price": 7.0 }
+    ],
+    "ordered_by": 208,
+    "duration": 22,
+    "order_type": "dine-in",
+    "order_status": "not served",
+    "table_number": "6659ec8f9f1f6f001a4ef0c8",
+    "chief": "6659ecab9f1f6f001a4ef0ce",
+    "process": "Processing",
+    "pickedup": false
+  },
+  {
+    "items": [
+      { "name": "Ice Cream", "quantity": 2, "price": 2.5 }
+    ],
+    "ordered_by": 209,
+    "duration": 5,
+    "order_type": "takeaway",
+    "order_status": "served",
+    "table_number": "6659ec8f9f1f6f001a4ef0c9",
+    "chief": "6659ecab9f1f6f001a4ef0cf",
+    "process": "Processing",
+    "pickedup": false
+  },
+  {
+    "items": [
+      { "name": "Tandoori Roti", "quantity": 3, "price": 1.2 },
+      { "name": "Dal Makhani", "quantity": 1, "price": 7.0 }
+    ],
+    "ordered_by": 208,
+    "duration": 22,
+    "order_type": "dine-in",
+    "order_status": "not served",
+    "table_number": "6659ec8f9f1f6f001a4ef0c8",
+    "chief": "6659ecab9f1f6f001a4ef0ce",
+    "process": "Processing",
+    "pickedup": false
+  },
+  {
+    "items": [
+      { "name": "Ice Cream", "quantity": 2, "price": 2.5 }
+    ],
+    "ordered_by": 209,
+    "duration": 5,
+    "order_type": "takeaway",
+    "order_status": "served",
+    "table_number": "6659ec8f9f1f6f001a4ef0c9",
+    "chief": "6659ecab9f1f6f001a4ef0cf",
+    "process": "Processing",
+    "pickedup": false
+  },
+  {
+    "items": [
+      { "name": "Ice Cream", "quantity": 2, "price": 2.5 }
+    ],
+    "ordered_by": 209,
+    "duration": 5,
+    "order_type": "takeaway",
+    "order_status": "served",
+    "table_number": "6659ec8f9f1f6f001a4ef0c9",
+    "chief": "6659ecab9f1f6f001a4ef0cf",
+    "process": "Processing",
+    "pickedup": false
+  },
+  {
+    "items": [
+      { "name": "Club Sandwich", "quantity": 1, "price": 6.5 },
+      { "name": "Cold Coffee", "quantity": 1, "price": 3.0 }
+    ],
+    "ordered_by": 210,
+    "duration": 12,
+    "order_type": "dine-in",
+    "order_status": "not served",
+    "table_number": "6659ec8f9f1f6f001a4ef0ca",
+    "chief": "6659ecab9f1f6f001a4ef0d0",
+    "process": "Processing",
+    "pickedup": false
+  }
+]

@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-color: white;
+    width: 80vw;
+    height:85vh ;
+    margin-top: 2%;
+    overflow: auto;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    
+}
+.master{
+    border-radius: 20px;
+    background-color: #ffe3bc;
+    width: 20%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+    
+}
+
+.cardtop{
+    background-color: white;
+    height: 30%;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.cardmiddle{
+    background-color: white;
+    height: 60%;
+     border-radius: 10px;
+      padding: 5px;
+      font-size: small;
+}
+.cardbottom{
+    width: 40%;
+    height: 10%;
+    border-radius: 20px;
+    text-align: center;
+     padding: 15px;
+     background-color:#fdc474;
+     color: #d97400;
+     position: relative;
+     left:20%;
+     /* display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center; */
+}
+.cradTopDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe3bc;
+    border-radius: 20px;
+    padding: 10px;
+    height: fit-content;
+}
+
+.orderdone{
+        border-radius: 20px;
+    background-color: #b9f8c9;
+    width: 20%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+
+}
+
+.takeaway{
+     border-radius: 20px;
+    background-color: #c1d4d9;
+    width: 20%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+
+}
+
+.cradTopDivTakeaway{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c1d4d9;
+    border-radius: 20px;
+    padding: 10px;
+    height: fit-content;
+}
+
+.cardbottomtakeaway{
+    width: 40%;
+    height: 10%;
+    border-radius: 20px;
+    text-align: center;
+     padding: 15px;
+     background-color:rgb(152, 183, 191);
+     color: rgb(18, 60, 71);
+     position: relative;
+     left:20%;
+
+}

@@ -1,10 +1,16 @@
 import React from 'react'
 import Navbar from '../Navbar'
 import styles from '../styles/Dashboard.module.css'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import Table from '../pages/table'
+import Order from '../pages/orderr'
+import { Link} from 'react-router'
+import Main from '../pages/main'
 function dashboard() {
-    const [state,Setstate]=useState('')
+    const [state,Setstate]=useState(localStorage.getItem('state') || '')
+    
+    
+
   return (
     <div className={styles.main} >
         <div className={styles.navbarTop}>
@@ -12,9 +18,9 @@ function dashboard() {
         <Navbar state={state} Setstate={Setstate}/>
         </div>
                 {
-        state==='' && 
+        state=='' && 
         <div className={styles.body}>
-            dashboard
+            <Main />
         </div>
         }
 
@@ -27,16 +33,14 @@ function dashboard() {
 
                 {
         state==='menu' && 
-        <div className={styles.body}>
-            menu
-        </div>
+        <a href='http://localhost:5173'/>
         }
 
 
                 {
         state==='orders' && 
         <div className={styles.body}>
-            orders
+            <Order />
         </div>
         }
 
