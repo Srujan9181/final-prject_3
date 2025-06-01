@@ -21,14 +21,28 @@ function cards({item,orderitems,Setorderitem,idqunat,setIdqunat}) {
        setIdqunat([...idqunat,newItem])
        localStorage.setItem('idquant',JSON.stringify([...idqunat,newItem]))    
       }
-       
-        
-
-
     }
+
+  function deleteitem(){
+    let checkitem=idqunat.find(element=>element._id==item._id)
+    Setorderitem(orderitems-1)
+    localStorage.setItem('orderitems',orderitems-1)
+
+    if (checkitem){
+        const updateditems=idqunat.map((element)=>
+            element._id==item._id?{...element,quantity:element.quantity-1}:element
+
+        )
+        setIdqunat(updateditems)
+        localStorage.setItem('idquant',JSON.stringify(updateditems))
+      }
+      else{
+          
+      }
+  }
    
     console.log(idqunat)
-    
+     let checkitem=idqunat.find(element=>element._id==item._id) || []
     // localStorage.setItem('orders',JSON.stringify(idqunat))
     
   return (
@@ -43,11 +57,15 @@ function cards({item,orderitems,Setorderitem,idqunat,setIdqunat}) {
                    {/* {idqunat.forEach(element => 
                     element._id==item._id?<FaPlus style={{position:"relative", top:"45%"}} onClick={insertitem}/>:<p>hello</p>
                    )} */}
-                   {
-                    idqunat.find(element=>element._id==item._id)?<span>
-                      <TiMinus /> {item.quantity} <TiPlus />
-                    </span>:<FaPlus style={{position:"relative", top:"45%"}} onClick={insertitem}/>
+                   
+                   { checkitem.quantity>=1 && 
+                    <span className={styles.plusminus}>
+                      <TiMinus onClick={deleteitem} className={styles.minus}/> {checkitem.quantity}
+                    </span>
                    }
+                   
+                   <TiPlus className={styles.plus} style={{position:"relative", top:"45%"}} onClick={insertitem}/>
+                   
                    
                         
                 </div>

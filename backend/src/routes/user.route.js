@@ -1,8 +1,8 @@
 import express from 'express';
-import items from '../models/item.model.js'
+import {itemsdata, placeorder} from '../controllers/user.controller.js'
 const userRouter=express.Router()
-userRouter.get('/',async function(req,res){
-    const item=await items.find()
-    res.status(201).json(item)
-})
+userRouter.get('/',itemsdata)
+
+userRouter.post('/order',placeorder)
+
 export default userRouter

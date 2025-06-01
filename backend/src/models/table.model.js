@@ -9,6 +9,10 @@ const table= new mongoose.Schema({
     num_persons:{
         type:Number,
         required:true
+    },
+    staus:{
+        type:String,
+        default:"not reserved"
     }
 })
 

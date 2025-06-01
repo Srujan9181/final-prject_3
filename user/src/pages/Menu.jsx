@@ -57,7 +57,9 @@ function Menu() {
 
   return (
 
-    <>  
+    <div className={styles.main}>
+    <div className={styles.master}>
+
      <h2>{wish}</h2>
      <h4>place you order here</h4>
      <input type="search" name="" id="" className={styles.search}/> 
@@ -83,7 +85,9 @@ function Menu() {
           <button onClick={()=>navigate('cart')}>Next</button>
           </div>}
       
-    </>
+      </div>
+      
+    </div>
   )
 }
 

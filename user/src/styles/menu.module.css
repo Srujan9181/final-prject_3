@@ -1,6 +1,17 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 100vh;
+}
 
-
-@media screen and (max-width:480px){
+.master{
+    width: 30vw;
+    height: 100%;
+    border: 2px solid;
+    position: relative;
+     overflow: auto
+}
     
     .menu{
         display: flex;
@@ -59,9 +70,11 @@
         margin-bottom: 2%;
     }
     .numberoforders{
-       position: fixed;
-       top: 95%;
-       width: 90%;
+       position: absolute;
+       border-radius: 10px;
+       top: 93%;
+       width: 96%;
+       left: 2%;
         z-index: 1000;
         background-color: rgb(27, 166, 115);
        color: white;
@@ -75,5 +88,25 @@
         background: none;
         color: white;
     }
+    .plusminus{
+        display: flex;
+        position: relative;
+        top:45%;
+    }
+
+
+    @media screen and (max-width:500px){
+        .master{
+            width: 100%;
+           
+        }
+        
+    }
+        @media screen and (max-width:900px) and (min-width:500px){
     
+        .master{
+            width: 50%;
+        }
 }
+    
+

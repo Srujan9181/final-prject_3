@@ -1,4 +1,25 @@
-@media screen and (max-width:480px){
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    padding: 2%;
+    height: 100vh;
+    border: 1px solid black;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.master{
+    width: 30vw;
+    height: 100%;
+    border: 2px solid;
+    position: relative;
+}
+
+
     
     .search{
         background-color: white;
@@ -18,7 +39,7 @@
     .items{
         overflow-y: auto;
         
-        height: 15vh;
+        height: 17vh;
     }
     .image{
         border-radius: 10px;
@@ -31,11 +52,11 @@
 
     
     .cookinginstructions{
-        background-color: rgba(25, 15,25, 0.5);
+        background-color: rgba(255, 255, 255, 0.8);
         z-index: 2000;
         position: absolute;
         top: 0%;
-        width: 100%;
+        width: 95%;
         height: 99%;
         display: flex;
         flex-direction: column;
@@ -50,12 +71,13 @@
         
     }
     .inputinstructions{
-        height: 80%;
-        width: 100%;
-        border: none;  
+        height: 20%;
+        width: 98%;
+        /* border: none;   */
         margin-bottom: 2%;
         outline: none;
         border-radius: 10px;
+        background: none;
         
     }
     .buttonsDiv {
@@ -91,5 +113,115 @@
         border: 1px solid #ccc;  /* optional for visibility */
         border-radius: 8px;
     }
+
+    .selectingopt{
+        
+        display: flex;
+        padding: 2px;
+        border-radius: 50px;
+        background-color:#e4e4e4;
+        width: 100%;
+        padding: 2%;
+        
+    }
+    .Dinein,.Takeaway{
+        width: 50%;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        background: none;
+        font-size: large;
+        
+    }
+    .Dinein{
+        background-color: white;
+    }
+    .pricedetails{
+        display: flex;
+        flex-direction: column;
+        background-color: #fff9c8;
+        width: 100%;
+        height: 15vh;
+        padding: 2%;
+        
+    }
+    .pricing{
+        display: flex;
+        height: 6vh;
+        justify-content: space-between;
+    }
+    .adddetails{
+        border: none;
+        background: none;
+        border-bottom: 2px dashed gray;
+    }
+    .userdetails{
+       height: 15vh;
+       padding: 2%;
+        position: absolute;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2%;
+        box-shadow: 0px 0px 10px rgb(194, 194, 194);
+        border-radius: 10px;
+        top: 70%;
+        left: 10%;
+        z-index: 100;
+
+       
+    }
+    .userdetails>input{
+        height: 30%;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid black;
+        padding-left: 2%;
+        font-size: x-small;
+    }
+    .details{
+        border-top: 2px solid gray;
+        border-bottom: 2px solid gray;
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 2%;
+    }
+    .orderDiv{
+        height: 8vh;
+        width: 100%;
+        border-bottom: 1px solid grey;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 3%;
+        padding: 2%;
+    }
+    .orderDiv>div{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 3%;
+        width: 100%;
+      
+    }
+
+    @media screen and (max-width:480px){
     
+        .master{
+            width: 100%;
+        }
+}
+
+    @media screen and (max-width:900px) and (min-width:500px){
+    
+        .master{
+            width: 50%;
+        }
 }
