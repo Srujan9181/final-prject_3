@@ -6,8 +6,8 @@ This is a full-featured Restaurant Web Application with separate admin and user 
 
 ## 🌐 Live URLs
 
-- 🔐 Admin Panel: [http://35.200.139.187:5353/admin/](http://35.200.139.187:5353/admin/)
-- 👥 User Panel: [http://35.200.139.187:5353/user](http://35.200.139.187:5353/user)
+- 🔐 Admin Panel: [http://35.200.139.187:5353/admin/](http://34.100.137.100:5353/admin/)
+- 👥 User Panel: [http://35.200.139.187:5353/user](http://34.100.137.100:5353/user)
 
 ---
 
